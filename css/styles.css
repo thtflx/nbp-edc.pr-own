@@ -114,7 +114,7 @@ select:-webkit-autofill:focus {
 
 /* BUTTON */
 
-.button {
+.btn {
     display: inline-block;
     padding: 8px 22px;
     font-size: 14px;
@@ -128,7 +128,7 @@ select:-webkit-autofill:focus {
     border-radius: 5px;
 }
 
-.button:active {
+.btn:active {
     opacity: 0.6;
 }
 
@@ -319,6 +319,97 @@ select:-webkit-autofill:focus {
 }
 
 .sixt {}
+
+
+/* QUIZ! */
+
+.quiz-parent {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.quiz-wrp {
+    margin-bottom: 10px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.quiz-container {
+    background-color: rgb(13, 12, 12);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(8, 8, 8, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+
+/* #question {
+    color: black;
+}
+
+#a_text {
+    color: black;
+}
+
+#b_text {
+    color: black;
+}
+
+#c_text {
+    color: black;
+}
+
+#d_text {
+    color: black;
+} */
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #1b03b7;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color: #0451c4;
+}
+
+button:focus {
+    outline: none;
+    background-color: #44b927;
+}
 
 
 /* RETINA */
