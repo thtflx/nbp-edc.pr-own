@@ -6,6 +6,7 @@
     --f1: 'Hanken Grotesk', sans-serif;
     --f2: 'Andika', sans-serif;
     --f3: 'Ubuntu', sans-serif;
+    --f4: 'Roboto Mono', monospace;
     --grey: #273032;
     --accent: #ef5800;
 }
@@ -143,6 +144,19 @@ select:-webkit-autofill:focus {
 
 .header__container {
     display: flex;
+    justify-content: center;
+    /* background: url('../img/teacher.gif');
+    background-repeat: no-repeat; */
+}
+
+.header-gif {
+    width: 50px;
+    height: 50px;
+}
+
+.header-text {
+    font-family: var(--f4);
+    font-weight: 300;
 }
 
 .header__link {
@@ -278,15 +292,20 @@ select:-webkit-autofill:focus {
 .themes__container {}
 
 .themes__list {
+    justify-content: center;
+    display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .themes__item {}
 
 .themes__item:not(:last-child) {
     margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 .themes__link {
@@ -297,28 +316,33 @@ select:-webkit-autofill:focus {
     border-radius: 20px;
 }
 
-.scn {
+
+/* .scn {
     margin-top: 5px;
     position: relative;
-    right: -160px;
-}
+    right: -60px;
+} */
 
-.thr {
+
+/* .thr {
     position: relative;
-    right: -250px;
-}
+    right: -200px;
+} */
 
-.frth {
+
+/* .frth {
     position: relative;
     right: -180px;
-}
+} */
 
-.fif {
+
+/* .fif {
     position: relative;
     right: -100px;
-}
+} */
 
-.sixt {}
+
+/* .sixt {} */
 
 
 /* QUIZ! */
@@ -409,6 +433,22 @@ button:hover {
 button:focus {
     outline: none;
     background-color: #44b927;
+}
+
+
+/* HIDE/SHOW */
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.bold {
+    font-weight: 600;
+    color: black;
 }
 
 

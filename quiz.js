@@ -1,3 +1,48 @@
+const themesHeader = document.querySelector('.themes__list');
+const themesItems = document.querySelectorAll('.themes__link');
+const quizContents = document.querySelectorAll('.quiz-wrp');
+
+function hideContent() {
+    quizContents.forEach((item) => {
+        item.classList.add('hide');
+        item.classList.remove('show');
+    });
+
+    themesItems.forEach((item) => {
+        item.classList.remove('bold');
+    });
+}
+
+
+function showContent(i = 0) {
+    quizContents[i].classList.add('show');
+    quizContents[i].classList.remove('hide');
+    themesItems[i].classList.add('bold');
+}
+
+
+hideContent();
+showContent();
+
+
+themesHeader.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target && target.classList.contains('themes__link')) {
+        themesItems.forEach((item, i) => {
+            if (item == target) {
+                hideContent();
+                showContent(i);
+            }
+        });
+    }
+});
+
+
+
+
+
+
+
 const quizData = [{
         question: "Первый вопрос?",
         a: "ответ 1",
