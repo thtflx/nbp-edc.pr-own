@@ -76,6 +76,8 @@ const quizData = [{
         correct: "d",
     },
 ];
+
+
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
